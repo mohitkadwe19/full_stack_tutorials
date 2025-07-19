@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO -->
+  <title>Html classes</title>
+  <!-- favicon -->
+  <link rel="icon" href="../assets/image.png" type="image/png" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <!-- 
+    path
+    1. Relative path: full path from the current file to the resource
+    2. Absolute path: full path from the root of the website to the resource
+    -->
+  <!-- <style>
+      body {
+        background-color: #f0f0f0;
+      }
+    </style> -->
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<!-- body the user actually see the content -->
+
+<body>
+  <!-- block tag -->
+  <!-- <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
+
+    <p>Paragraph
+        on this paragraph we can write text,
+    </p>
+     <p>Paragraph
+        on this paragraph we can write text,
+    </p> -->
+  <!-- inline tag -->
+  <!-- <span>Span</span>
+    <span>Span</span> -->
+
+  <!-- div - block tag and container for other tag -->
+  <!-- <div>
+        <p>Paragraph inside a div</p>
+        <span>Span inside a div</span>
+    </div> -->
+
+  <!-- link tag 
+     we can use the link tag to link to other pages or resources 
+     attribute - define the extra information about the tag
+    -->
+  <!-- <a href="https://www.google.com" target="_self">Google</a>
+    <a href="https://www.youtube.com" target="_blank">Youtube</a> -->
+  <!-- <a href="../contact.html" target="_blank">
+        <img src="../assets/image.png" alt="no image" width="100" height="100">
+    </a> -->
+
+  <!--  list
+    1. unordered list
+    2. ordered list
+    3. description list  
+    -->
+
+  <!-- unordered list -->
+  <!-- <h3>Unordered List</h3>
+    <ul type="circle">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul> -->
+
+  <!-- ordered list -->
+  <!-- <h3>Ordered List</h3>
+    <ol type="A">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol> -->
+
+  <!-- description list -->
+  <!-- <h3>Description List</h3>
+    <dl> 
+        <dt>Term 1</dt>
+        <dd>Description 1</dd>
+        <dt>Term 2</dt>
+        <dd>Description 2</dd>
+        <dt>Term 3</dt>
+        <dd>Description 3</dd>
+    </dl> -->
+
+  <!-- nested list -->
+
+  <!-- <h3>Nested List</h3>
+
+    <ol>
+      <li>
+        Item 1
+        <ol>
+          <li>Sub Item 1</li>
+          <li>Sub Item 2</li>
+        </ol>
+      </li>
+    </ol>
+
+    <ul>
+      <li>
+        Item 1
+        <ul>
+          <li>Sub Item 1</li>
+          <li>Sub Item 2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ol>
+      <li>
+        Item 1
+        <ul>
+          <li>Sub Item 1</li>
+          <li>Sub Item 2</li>
+        </ul>
+      </li>
+    </ol>
+
+    <ul>
+      <li>
+        Item 1
+        <ol>
+          <li>Sub Item 1</li>
+          <li>Sub Item 2</li>
+        </ol>
+      </li>
+    </ul> -->
+
+  <!-- table -->
+
+  <!-- <h3>Table</h3> -->
+
+  <!-- <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="20">Data 1</td>
+          <td>Data 2</td>
+          <td>Data 3</td>
+        </tr>
+        <tr>
+          <td>Data 4</td>
+          <td>Data 5</td>
+          <td>Data 6</td>
+        </tr>
+      </tbody>
+    </table> -->
+
+  <!-- inline css -->
+
+  <!-- <marquee behavior="scroll" direction="right" scrollamount="10">
+      today we have 10% off on all products
+      <span style="color: red"> Hurry up!</span>
+
+      <img src="../assets/image.png" alt="no image" width="50" height="50" />
+    </marquee>
+
+    <p
+      style="
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      "
+    >
+      <span style="color: white"> this </span>
+      <span style="color: #2a7b9b"> is </span>
+      <span style="color: #57c785"> a </span>
+      <span style="color: #eddd53"> paragraph </span>
+    </p>
+
+    <div
+      style="
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: lightgreen;
+        text-align: center;
+        line-height: 200px;
+      "
+    >
+      <p>this is a div with inline css</p>
+    </div> -->
+
+  <!-- 
+ css - 
+ 1. inline css
+ 2. internal css
+ 3. external css
+-->
+  <form class="form">
+    <h3 class="form-title">Sign up</h3>
+    <label class="form-label" for="username">username:</label>
+    <input class="form-input" type="text" id="username" name="username" required />
+    <br />
+    <label class="form-label" for="password">Password:</label>
+    <input class="form-input" type="password" id="password" name="password" required />
+    <br />
+    <button class="form-button" type="submit">Submit</button>
+    <br />
+    <span>
+      already have an account ?
+    </span>
+    <a href="signin.html">
+      sign in
+    </a>
+  </form>
+</body>
+
+</html>
